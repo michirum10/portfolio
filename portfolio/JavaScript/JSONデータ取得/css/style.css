@@ -1,0 +1,73 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Arial', sans-serif; /* フォントをArialに設定 */
+    background-color: #f4f4f9; /* 背景色を淡い灰色に設定 */
+    color: #333; /* テキスト色を濃い灰色に設定 */
+    margin: 0; /* ページ全体の余白をなくす */
+    padding: 0; /* ページ全体のパディングをなくす */
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #fddbdb; /* ヘッダーの背景色を淡いピンクに設定 */
+    padding: 20px 0; /* 上下に20pxのパディングを設定 */
+    text-align: center; /* テキストを中央に揃える */
+    border-bottom: 1px solid #ccc; /* 下部に薄い灰色のボーダーを設定 */
+}
+
+h1 {
+    margin: 0; /* ヘッダーの余白をなくす */
+    font-size: 2em; /* フォントサイズを2emに設定 */
+    color: #333; /* テキスト色を濃い灰色に設定 */
+}
+
+/* 従業員リストのコンテナスタイル */
+.item-grid {
+    display: grid; /* グリッドレイアウトを使用 */
+    gap: 20px; /* グリッドアイテム間のスペースを設定 */
+    padding: 20px; /* 内側の余白を設定 */
+    max-width: 1000px; /* コンテナの最大幅を1000pxに設定 */
+    margin: 0 auto; /* コンテナを中央に配置 */
+    grid-template-columns: repeat(2, 1fr); /* 2列に設定 */
+    box-sizing: border-box; /* パディングを含めて幅を計算 */
+}
+
+/* 各メンバー情報のスタイル */
+dl {
+    background-color: #fff; /* 背景色を白に設定 */
+    padding: 20px; /* 内側の余白を設定 */
+    border-radius: 5px; /* ボーダーの角を丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    margin: 0; /* 余白をなくす */
+    box-sizing: border-box; /* パディングを含めて幅を計算 */
+}
+
+dt {
+    font-weight: bold; /* フォントを太字に設定 */
+    margin-top: 10px; /* 上部に10pxの余白を設定 */
+    color: #555; /* テキスト色を中程度の灰色に設定 */
+}
+
+dd {
+    margin: 0; /* 余白をなくす */
+    margin-left: 0; /* 左の余白をなくす */
+    padding-left: 0; /* 左のパディングをなくす */
+    color: #333; /* テキスト色を濃い灰色に設定 */
+}
+
+/* 画像のスタイル */
+dd img {
+    display: block; /* 画像をブロック要素として扱う */
+    max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+    height: auto; /* 画像の高さを自動調整 */
+    border-radius: 5px; /* 画像の角を丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    margin: 10px auto; /* 画像を中央に配置 */
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .item-grid {
+        grid-template-columns: 1fr; /* モバイルでは1列にする */
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>
+        {% if op == 'add' %}
+            {{ e1 }} + {{ e2 }} = {{ result }}
+        {% elif op == 'sub' %}
+            {{ e1 }} - {{ e2 }} = {{ result }}
+        {% elif op == 'mul' %}
+            {{ e1 }} x {{ e2 }} = {{ result }}
+        {% elif op == 'div' %}
+            {{ e1 }} ÷ {{ e2 }} = {{ result }}
+        {% endif %}
+    </p>
+    <a href="/">戻る</a>
+</body>
+</html>
