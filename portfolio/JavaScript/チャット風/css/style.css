@@ -1,57 +1,52 @@
-html {
-    height: 100%;
+/* 背景に画像を設定 */
+body {
+    background-color: lavenderblush;
+    background-image: url(../img/img.png);
 }
 
-body{
-    text-align-last: center;
-    padding: 0px;
-    margin: 0px;
+.asan {
+    color: red;
 }
-
-header{
-    height: 30px;
-}
-
-footer{
-    height: 30px;
-}
-
-main{
-
-}
-
-.Asan{
-    background-color: rgb(255, 176, 206);
-    color: rgb(166, 0, 0);
-}
-.Bsan{
-    background-color: rgb(199, 244, 255);
+.bsan {
     color: blue;
 }
 
-.msg{
-    text-align-last: left;
-    padding-left: 5px;
+h1 {
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #fd8c8c;
+    border-radius: 10px;
 }
-
-#chatContents{
+.space {
+    height: 500px;
+    overflow-y: auto;
+    background: #ffffffd4;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 98%;
+    margin: 0 auto;
+    text-align: left;
+}
+.mb-3 {
+    margin-top: 20px;
+}
+.btn {
+    width: 32%;
+    height: 50px;
+    margin-left: 1%;
+}
+.btn_design {
+    display: flex;
+}
+label.form-label {
+    background: #ffffff82;
     width: 100%;
-    padding-bottom: 50px;
+    border-radius: 6px;
+    padding: 4px;
 }
-
-#controller{
-	position: fixed;
-	bottom: 0px;
-    padding: 5px;
-    height: 55px;
-    width: 100%;
-    background: #29d4ff;
-}
-
-#input{
-    text-align-last: left;
-}
-
-input{
-    margin: 2px;
+div#output {
+    display: flex;
+    flex-direction: column-reverse;
 }

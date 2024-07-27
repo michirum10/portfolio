@@ -1,46 +1,60 @@
-const Asan = 'Asan'
-const Bsan = 'Bsan'
+// 人物分岐用定数、CSSのクラス名と一緒
+const ASAN = 'Asan';
+const BSAN = 'Bsan';
+const RESET = 'reset';
 
-const input = document.getElementById('input')
-const output = document.getElementById('output')
+const input = document.getElementById('num1');
+const output = document.getElementById('output');
 
-function sendMessage(name){
+function btn(action) {
+    switch (action) {
+        case ASAN:
+        case BSAN:
+            sendMessage(action);
+            break;
+        case RESET:
+            reset();
+            break;
+    }
+}
+
+function sendMessage(name) {
     // 入力されたメッセージが空の時
-    if(input.value == ''){
+    if (input.value === '') {
         // 処理を中断する
-        return
+        return;
     }
 
-    let className = `${name} msg`
+    let className = `${name.toLowerCase()} msg`;
     // 表示名の準備
-    let dispName = ''
-    switch(name){
-        case Asan:
-            dispName = 'Aさん'
-            break
-        case Bsan:
-            dispName = 'Bさん'
-            break
+    let dispName = '';
+    switch (name) {
+        case ASAN:
+            dispName = 'Aさん';
+            break;
+        case BSAN:
+            dispName = 'Bさん';
+            break;
     }
 
     // 現在の時刻の取得
-    let now = new Date()
+    let now = new Date();
     // 日本の形式の時刻表示に変換
     let nowf = now.toLocaleString('ja-JP');
     // タグ生成
     let inputStr = 
 `<dt class='${className}'>
-    ${now} : ${dispName}
+    ${nowf} : ${dispName}
 </dt>
 <dd class='${className}'>
     ${input.value}
-</dd>`
+</dd>`;
 
-    output.innerHTML += inputStr
-    input.value = ''
+    output.innerHTML += inputStr;
+    input.value = '';
 }
 
-function reset(){
-    output.innerHTML = ''
-    input.value = ''
+function reset() {
+    output.innerHTML = '';
+    input.value = '';
 }
