@@ -50,7 +50,7 @@ class LoginSystem(MethodView):
         # データベースからユーザーを検索
         user = User.query.get(id)
         
-        #idとpasseprdが一致するかどうかの確認
+        #idとpasswordが一致するかどうかの確認
         if user:
             if user.check_password(pw): #一致した場合
                 session['flag'] = True #ログイン可能な状態にする
@@ -78,7 +78,6 @@ class LoginSystem(MethodView):
 
 # LoginSystemをBlueprintに登録
 app2.add_url_rule("/",view_func=LoginSystem.as_view("login"))
-# ("login")はただ名前付けただけらしい
 
 # Blueprintのインデックスページ
 @app2.route("/")
