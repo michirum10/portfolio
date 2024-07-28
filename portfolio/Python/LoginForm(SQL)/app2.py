@@ -31,12 +31,6 @@ class User(db.Model):
         # 入力パスワードをハッシュ化し、保存されているハッシュと比較
         return bcrypt.checkpw(password.encode('utf-8'), self.password.encode('utf-8'))
 
-
-# # flask-loginからLoginManagerをimport
-# from flask_login import LoginManager
-# LoginManagerの起動
-# login = LoginManager(app) #extensionを起動させる際の標準的な記述
-
 # loginとsuccessの設定
 class LoginSystem(MethodView):
     # getでのアクセス時

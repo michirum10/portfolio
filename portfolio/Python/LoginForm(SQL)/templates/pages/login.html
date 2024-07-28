@@ -1,5 +1,4 @@
 <!-- こっちに実際の中身書く -->
-<!-- F12で確認すると、それぞれ書かれている場所わかる -->
 
 {% set title = "ログインページ" %}
 
@@ -22,6 +21,7 @@
             {{ msg }}
         </div>
     {% endif %}
+    
     <!-- APP2のloginメソッドを呼び出す -->
     <form action="{{ url_for('APP2.login') }}" method="post">
         <div class="mb-3"></div>
@@ -44,5 +44,3 @@
 {% block footer %}
 {% include 'Blocks/footer.html' %}
 {% endblock %}
-
-<!-- チームで開発するとき、みんなで同じファイルを触ると大変なので分割する -->
