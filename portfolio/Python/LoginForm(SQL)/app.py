@@ -1,18 +1,20 @@
 # app.py
 
 from flask import Flask,render_template
-
+from app2 import app2, init_db
 from config import DevelopmentConfig
 
 # インスタンス生成(appを初期化)
 app = Flask(__name__)
-print("Before importing config")
-app.config.from_object(DevelopmentConfig)
-print("After importing config")
+
+app.config.from_object(DevelopmentConfig)  # 設定をロード
 
 # Blueprintの登録
 from app2 import app2
 app.register_blueprint(app2)
+
+# データベースの初期化
+init_db(app)
 
 # indexの表示
 @app.route("/")
