@@ -1,0 +1,85 @@
+/* style.css */
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif; /* フォントの設定 */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 背景色 */
+    color: #333; /* 文字色 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* フッターを画面の下に固定 */
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #91a8c1; /* ヘッダーの背景色 */
+    color: white; /* ヘッダーの文字色 */
+    padding: 20px; /* パディング */
+    text-align: center; /* 中央揃え */
+}
+
+
+/* h1タグの位置を上部3分の1に調整 */
+h1 {
+    margin-top: 10vh; /* 上から20%の位置に配置 */
+}
+
+
+
+/* h1タグの上部余白を減らす */
+h1 {
+    margin-top: 10px; /* 必要に応じて値を調整 */
+}
+
+/* ナビゲーションのスタイル */
+nav ul {
+    list-style-type: none; /* リストスタイルを削除 */
+    padding: 0; /* パディングを削除 */
+}
+
+nav ul li {
+    display: inline; /* 横並び */
+    margin: 0 15px; /* マージン */
+}
+
+nav ul li a {
+    color: white; /* リンクの色 */
+    text-decoration: none; /* 下線を削除 */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
+}
+
+/* メインコンテンツのスタイル */
+main {
+    flex: 1; /* 残りのスペースを占める */
+    padding: 20px; /* パディング */
+    background-color: white; /* 背景色 */
+    border-radius: 8px; /* 角を丸める */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ボックスシャドウ */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 中央揃え */
+}
+
+/* フォームのスタイル */
+form {
+    width: 100%;
+    max-width: 400px; /* フォームの最大幅 */
+    margin: 0 auto; /* 中央揃え */
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333; /* フッターの背景色 */
+    color: white; /* フッターの文字色 */
+    text-align: center; /* 中央揃え */
+    padding: 10px; /* パディング */
+    position: relative; /* 相対位置 */
+    bottom: 0; /* 下に固定 */
+    width: 100%; /* 幅を100%に */
+}

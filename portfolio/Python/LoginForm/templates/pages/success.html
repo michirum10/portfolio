@@ -1,0 +1,51 @@
+<!-- こっちに実際の中身書く -->
+<!-- F12で確認すると、それぞれ書かれている場所わかる -->
+
+{% set title = "ログイン成功！" %}
+
+
+<!-- extends拡張機能 -->
+<!-- layoutファイルを反映 -->
+{% extends 'layout/layout.html' %}
+
+{% block head %}{% endblock %}
+
+<!-- headerファイルを呼び出す -->
+{% block header %}
+{% include 'Blocks/header.html'   %}
+{% endblock %}
+
+{% block contents %}
+<div class="container text-center">
+    <!-- 成功メッセージとアイコン -->
+    <div class="my-5">
+        <!-- Font Awesomeを使用した大きなチェックマークアイコン -->
+        <i class="fas fa-check-circle text-success" style="font-size: 5rem;"></i>
+        <!-- 成功メッセージ -->
+        <h2 class="mt-3">{{msg}}</h2>
+    </div>
+
+    <!-- ユーザー情報を表示するカード -->
+    <div class="card mx-auto" style="max-width: 300px;">
+        <div class="card-body">
+            <h5 class="card-title">ユーザー情報</h5>
+            <!-- ユーザーID -->
+            <p class="card-text"><strong>ID:</strong> {{id}}</p>
+            <!-- パスワード（セキュリティのため隠蔽） -->
+            <p class="card-text"><strong>PASS:</strong> ••••••••</p>
+        </div>
+    </div>
+
+    <!-- ホームページへ戻るボタン -->
+    <a href="/" class="btn btn-primary btn-lg mt-4">
+        <!-- ホームアイコン -->
+        <i class="fas fa-home"></i> ホームへ戻る
+    </a>
+</div>
+{% endblock %}
+<!-- footerファイルを呼び出す -->
+{% block footer %}
+{% include 'Blocks/footer.html'   %}
+{% endblock %}
+
+<!-- チームで開発するとき、みんなで同じファイルを触ると大変なので分割する -->

@@ -1,0 +1,44 @@
+<!-- こっちに実際の中身書く -->
+<!-- F12で確認すると、それぞれ書かれている場所わかる -->
+
+{% set title = "ログインページ" %}
+
+
+<!-- extends拡張機能 -->
+<!-- layoutファイルを反映 -->
+{% extends 'layout/layout.html' %}
+
+{% block head %}{% endblock %}
+
+<!-- headerファイルを呼び出す -->
+{% block header %}
+{% include 'Blocks/header.html'   %}
+{% endblock %}
+
+{% block contents %}
+    <!-- APP2のloginメソッドを呼び出す -->
+    <form action="{{ url_for('APP2.login') }}" method="post">
+        <div class="mb-3"></div>
+            <label for="id" class="form-label">ID:</label>
+            <input type="text" class="form-control" name="id" id="">
+        </div>
+        <div class="mb-3">
+            <label for="pw" class="form-label">PW:</label>
+            <!-- password入力を・・・に -->
+            <input type="password" class="form-control" name="pw" id="">
+        </div>
+        <!-- 送信ボタンをBootstrapのプライマリボタンに変更 -->
+        <button type="submit" class="btn btn-primary">送信</button>
+    </form>
+    <p style="color: red;">{{msg}}</p>
+
+    <!-- 戻るリンクをBootstrapのセカンダリーボタンに変更 -->
+    <a href="/" class="btn btn-secondary mt-3">戻る</a>
+{% endblock %}
+
+<!-- footerファイルを呼び出す -->
+{% block footer %}
+{% include 'Blocks/footer.html' %}
+{% endblock %}
+
+<!-- チームで開発するとき、みんなで同じファイルを触ると大変なので分割する -->
