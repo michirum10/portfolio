@@ -11,7 +11,7 @@ window.onload = function () {
     function weather() {
         // fetchはデータの取得(非同期通信)
         // 引数にはデータのURL（相対パス）
-        fetch("https://api.thecatapi.com/v1/images/search")
+        fetch("https://weather.tsukumijima.net/api/forecast/city/270000")
             // response(URLから受け取った情報)をjsonに変換
             .then(response => response.json())
             // JSONデータを受け取って処理
