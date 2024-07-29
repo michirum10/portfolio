@@ -14,16 +14,20 @@ body {
 
 /* ヘッダーのスタイル */
 header {
-    background-color: #91a8c1; /* ヘッダーの背景色 */
+    background-color: #7bb4f1; /* ヘッダーの背景色 */
     color: white; /* ヘッダーの文字色 */
     padding: 20px; /* パディング */
     text-align: center; /* 中央揃え */
 }
 
-
 /* h1タグの位置を上部3分の1に調整 */
 h1 {
     margin-top: 10vh; /* 上から20%の位置に配置 */
+}
+
+/* h1タグの上部余白を減らす */
+h1 {
+    margin-top: 10px; /* 必要に応じて値を調整 */
 }
 
 /* ナビゲーションのスタイル */

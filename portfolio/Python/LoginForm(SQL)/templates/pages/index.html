@@ -1,4 +1,3 @@
-<!-- こっちに実際の中身書く -->
 {% set title = "MAIN MENU" %}
 
 <!-- extends拡張機能 -->
@@ -15,8 +14,10 @@
 {% block contents %}
 <h1>{{msg}}</h1>
 <br>
-    <!-- login画面に遷移 -->
-    <a href="{{ url_for('APP2.login') }}" class="btn btn-primary">
+    <!-- login画面に遷移(Blueprint) -->
+    <!-- bootstrapのプライマリボタン(大) -->
+    <a href="{{ url_for('LoginSystem.login') }}" class="btn btn-primary btn-lg">
+        <!-- ログインアイコン -->
         <i class="fas fa-sign-in-alt"></i> ログインページへ
     </a>
 {% endblock %}
