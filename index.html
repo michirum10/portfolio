@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="mb-0 title">'s Portfolio</h1>
+            <nav class="mt-2">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="./">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#introduction">自己紹介</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#portfolio">ポートフォリオ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="introduction" class="py-5">
+            <h2 class="h2 mb-6">自己紹介</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            名前
+                        </div>
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            出身
+                        </div>
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            趣味
+                        </div>
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p class="card-text">読書 / 食べ歩き / 釣り</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            経験言語
+                        </div>
+                        <div class="card-body align-items-center justify-content-center">
+                            <p class="card-text">HTML / CSS / JavaScript / Python(Flask) / SQL(SQLite)</p>
+                            <div class="language-icons">
+                                <img src="../static/img/html.png" alt="HTML">
+                                <img src="../static/img/css.png" alt="CSS">
+                                <img src="../static/img/js.png" alt="JavaScript">
+                            </div>
+                            <div class="language-icons">
+                                <img src="../static/img/python.png" alt="python">
+                                <img src="../static/img/sqlite.png" alt="SQLite">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            学習スキル
+                        </div>
+                        <div class="card-body align-items-center justify-content-center">
+                            <p class="card-text">データベース / Linuxサーバー構築 / AWS / GitHub</p>
+                            <div class="language-icons">
+                                <img src="../static/img/Linux.png" alt="Linux">
+                                <img src="../static/img/aws.png" alt="AWS">
+                                <img src="../static/img/github.png" alt="GitHub">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container">
+        <section id="portfolio" class="py-3">
+        <h2 class="h2 mb-6">ポートフォリオ</h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a href="">DogDetailsApp</a>
+                            </h3>
+                            <p class="card-text">
+                                天気予報APIよりデータを取得し、３日間の大阪の天気を表示するアプリです。<br>
+                                ポイント：非同期通信とDOM操作を活用して、リアルタイムの天気情報を動的に表示。<br>
+                            </p>
+                            <p><strong>使用技術:</strong> HTML, CSS, JavaScript</p>
+                            <div class="language-icons">
+                                <img src="../static/img/html.png" alt="HTML">
+                                <img src="../static/img/css.png" alt="CSS">
+                                <img src="../static/img/js.png" alt="JavaScript">
+                            </div>
+                            <a href=""
+                                class="btn btn-primary">GitHubリポジトリ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a href="">ECサイト(ユーザーTOP画面)</a>
+                            </h3>
+                            <p class="card-text">JavaScriptを使用して構築されたシンプルなネットショップアプリで、
+                                商品一覧、詳細表示、カート機能、購入確認、購入完了の各画面を備えています。<br>
+                                ポイント:非同期データ取得とsessionStorageを活用したページ間データの受け渡しによるカート機能の実装。<br> </p>
+                            <p><strong>使用技術:</strong> HTML, CSS, JavaScript</p>
+                            <div class="language-icons">
+                                <img src="../static/img/html.png" alt="HTML">
+                                <img src="../static/img/css.png" alt="CSS">
+                                <img src="../static/img/js.png" alt="JavaScript">
+                                <img src="../static/img/python.png" alt="python">
+                            </div>
+                            <a href=""
+                                class="btn btn-primary">GitHubリポジトリ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <a href="https://github.com/yourusername/yourrepository" target="_blank" class="github-button">ポートフォリオのGitHubリポジトリはこちら</a>
+            </p>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2024</p>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="トップに戻る">&#8679;</button>
+
+    <script>
+        // トップに戻るボタンの表示制御
+        window.onscroll = function() {
+            var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // トップに戻る関数
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
