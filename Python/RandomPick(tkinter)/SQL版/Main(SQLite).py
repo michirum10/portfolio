@@ -25,10 +25,10 @@ class RandomNameSelector:
         cursor = conn.cursor()  # カーソルオブジェクトを作成
         # namesテーブルを作成（存在しない場合）
         cursor.execute('''CREATE TABLE IF NOT EXISTS names
-                          (id INTEGER PRIMARY KEY, name TEXT UNIQUE)''')
+                        (id INTEGER PRIMARY KEY, name TEXT UNIQUE)''')
         # picked_namesテーブルを作成（存在しない場合）
         cursor.execute('''CREATE TABLE IF NOT EXISTS picked_names
-                          (id INTEGER PRIMARY KEY, name TEXT UNIQUE)''')
+                        (id INTEGER PRIMARY KEY, name TEXT UNIQUE)''')
         conn.commit()  # 変更をコミット
         conn.close()  # データベース接続を閉じる
 

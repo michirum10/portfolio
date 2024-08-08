@@ -1,0 +1,11 @@
+{
+    "builds": [
+    {
+        "src": "TopPage/index.html",
+        "use": "@vercel/static"
+    }
+    ],
+    "routes": [
+    { "src": "/", "dest": "TopPage/index.html" }
+    ]
+}
